@@ -1,0 +1,19 @@
+@use './sass/utils/' as *;
+@use './sass/base/' as *;
+@use './sass/components/' as *;
+@use './sass/layout/' as *;
+//@use './sass/pages/' as *; 
+
+
+button.test-btn{
+  position: fixed;
+  top: 120px;
+  left: 80px;
+  z-index: 200;
+  display: none;
+}
+
+/* media queries : 1300, 1200, 1024, 700, 620 */
+
+
+

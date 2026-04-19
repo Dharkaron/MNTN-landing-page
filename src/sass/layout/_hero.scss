@@ -1,0 +1,158 @@
+@use '../utils' as *;
+
+
+//¤* Débordement !!!! */
+
+/* media query at 700 (text & co), 620 (bg pos) */
+
+.hero{
+  height: 100vh;
+  max-width: 100vw;
+
+  &__back{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+  }
+  
+  & .HG{
+    z-index: 60;  
+  }
+  &::before{
+    z-index: 80;
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: -50vh;
+    left: 0;
+    right: 0;
+    background: linear-gradient(160deg, rgba(11, 29, 38, 1) 0%, rgba(11, 29, 38, 0) 80%);   
+  }
+  & .MG{
+    z-index: 70;
+    top: 50%;
+  }
+  & .VG{
+    z-index: 90;
+    top: 75%;
+    will-change: transform;
+    transform-style: preserve-3d;
+  }
+
+  &__banner{
+    will-change: opacity, transform;
+    opacity: 0;
+    transform-style: preserve-3d;
+    
+    z-index: 80;
+    position: fixed;
+    top: calc(50% - 145px);
+    left: calc(50% - 395px);
+    max-width: 790px;
+    width: 100%;
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 32px;
+  
+    &__heading--line{
+      margin-right: 32px !important;
+    }
+  
+    &__title{ 
+      display: inline-block;
+      font-family: 'Chronicle-Display--semibold';
+      font-size: 75px;
+     
+      text-transform: capitalize;
+    }
+  
+    &__scroll{
+      font-family: 'gilroy-bold';
+      font-size: 16px;
+      font-weight: bold;
+      display: flex;
+      align-items: flex-end;
+  
+      .arrow-down{
+        height: 24px !important;
+        margin-left: 16px;
+        fill: hsl(0, 0%, 100%);
+      }
+      &:hover .arrow-down{
+        animation: arrowScroll linear 1s infinite;
+      }
+    }
+  }
+}
+
+@media (width < 1024px) {
+
+  .hero__banner{
+    max-width: 610px;    
+    top: calc(50% - 125px);
+    left: calc(50% - 305px);
+
+    align-items: center;
+    text-align: center;
+    
+    &__heading{
+      flex-direction: column-reverse;
+      gap: 10px;
+    }
+    &__title{
+      font-size: 58px;
+    }
+  }
+  .social{
+   display: none;
+  }
+}
+
+/* display:inline  pour arriere plan du texte*/
+
+@media (width<700px){
+  .hero{
+    &__banner{    
+      top: 50vh; 
+      &__title{
+        font-size: 50px;
+      }
+      &__scroll{
+        display: none;
+      }
+    }
+  }
+}
+
+@media (width<620px){
+  .hero{
+    &__banner{
+      z-index: 100;
+      position: absolute;
+      top: 80vh;
+      left: 0;
+      opacity: 1 !important;
+      padding: 0 5px;
+
+      &__title span{
+        display: inline;
+        background-color: rgba(0,0,0,0.2);
+        border-radius: 10px;
+        padding: 2px 5px;
+      }
+    }
+
+    & .MG{
+      top: 26%;
+    }
+    & .VG{
+      top: 40%;
+    }
+  }
+}

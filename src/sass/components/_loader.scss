@@ -1,0 +1,43 @@
+@use '../utils' as *;
+
+.loader, .altloader{
+  position: fixed;
+  z-index: 300;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  background-color: rgb(5, 29, 40);
+  
+  opacity: 1;
+
+  display: none;
+  justify-content: center;
+  align-items: center;  
+
+  &__logo, &__altlogo{
+    position: relative;
+    cursor: pointer;
+    font-size: 60px;
+    font-family: 'Chronicle-Display--bold';
+    transition: all 0.4s;
+    animation: pulse 3s infinite linear;
+    //background: radial-gradient( rgba(255, 255, 255, 0.2) ,rgba(255, 255, 255, 0.1) ,rgba(255, 255, 255, 0.005) , transparent );    
+    //border-radius:50%;
+    //padding: 20px;
+  }
+  &__logo:hover{
+    transform: translateY(-1px) scale(102%);
+  }
+  &__altlogo{
+    cursor: default;
+    animation: none;
+  }  
+}
+.load{
+  animation: loading 1s linear forwards;
+}
+.unload{
+  animation: loading 0.5s linear reverse;
+}

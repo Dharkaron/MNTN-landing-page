@@ -1,0 +1,28 @@
+.social{
+  z-index: 200;
+  position: fixed;
+  top: 210px;
+  left: 40px;
+
+  writing-mode: vertical-lr;
+  text-orientation: upright;
+  font-family: 'Gilroy-bold';
+  font-size: 18px;
+
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+
+  &__icon{
+    width: 22px;
+    fill: hsl(0, 0%, 100%);
+    cursor: pointer;
+    transition: all 0.2s ease;
+
+    &:hover{
+      transform: scale(1.2);
+    }
+  }
+}

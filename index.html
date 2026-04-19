@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/svg+xml" href="./assets/icons/Favicon.webp">
+  <title>MNTN | Landing Page</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" 
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" 
+      crossorigin="anonymous" referrerpolicy="no-referrer">
+
+  <link rel="stylesheet" href="./assets/styles/style.css">
+
+  <!-- JS Scripts -->
+  <script type="module" src="/src/Script.js" defer></script>
+
+  
+</head>
+
+<body>
+
+  <button class="test-btn">Click me!</button>
+
+  <div class="loader"><p class="loader__logo ">MNTN</p></div> 
+  <div class="altloader"><p class="altloader__altlogo">MNTN</p></div> 
+
+  <aside class="social">
+    <p class="unselectable">Follow us</p>
+    <svg class="social__icon link-yellow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+      <path d="M224.3 141a115 115 0 1 0 -.6 230 115 115 0 1 0 .6-230zm-.6 40.4a74.6 74.6 0 1 1 .6 149.2 74.6 74.6 0 1 1 -.6-149.2zm93.4-45.1a26.8 26.8 0 1 1 53.6 0 26.8 26.8 0 1 1 -53.6 0zm129.7 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM399 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/>
+    </svg> 
+    <svg class="social__icon link-yellow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
+      <path d="M523.4 215.7C523.7 220.2 523.7 224.8 523.7 229.3C523.7 368 418.1 527.9 225.1 527.9C165.6 527.9 110.4 510.7 64 480.8C72.4 481.8 80.6 482.1 89.3 482.1C138.4 482.1 183.5 465.5 219.6 437.3C173.5 436.3 134.8 406.1 121.5 364.5C128 365.5 134.5 366.1 141.3 366.1C150.7 366.1 160.1 364.8 168.9 362.5C120.8 352.8 84.8 310.5 84.8 259.5L84.8 258.2C98.8 266 115 270.9 132.2 271.5C103.9 252.7 85.4 220.5 85.4 184.1C85.4 164.6 90.6 146.7 99.7 131.1C151.4 194.8 229 236.4 316.1 240.9C314.5 233.1 313.5 225 313.5 216.9C313.5 159.1 360.3 112 418.4 112C448.6 112 475.9 124.7 495.1 145.1C518.8 140.6 541.6 131.8 561.7 119.8C553.9 144.2 537.3 164.6 515.6 177.6C536.7 175.3 557.2 169.5 576 161.4C561.7 182.2 543.8 200.7 523.4 215.7z"/>
+    </svg>
+  </aside>
+  <aside class="slider">
+    <a class="slider__link link-yellow" href="#topHeader">Start
+      <span class="link--border link--selected" id="slider00"></span>
+    </a>
+    <a class="slider__link link-yellow" href="#article01">01
+      <span class="link--border" id="slider01"></span>
+    </a>
+    <a class="slider__link link-yellow" href="#article02">02
+      <span class="link--border" id="slider02"></span>
+    </a>
+    <a class="slider__link link-yellow" href="#article03">03
+      <span class="link--border" id="slider03"></span>
+    </a>
+  </aside>
+
+  <aside class="sidemenu">
+    <input class="sidemenu__toggle" type="checkbox" name="togglemenu" id="togglemenu">
+    <label class="sidemenu__trigger" for="togglemenu">
+      <span class="burger-top"></span>
+      <span class="burger-mid"></span>
+      <span class="burger-bottom"></span>
+    </label>
+    <div class="sidemenu__background"></div>
+    
+    <div class="sidemenu__social">
+      <p class="unselectable sidemenu__social__text">Follow us</p>
+      <div class="sidemenu__social__icons">
+        <svg class="social__icon link-yellow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+          <path d="M224.3 141a115 115 0 1 0 -.6 230 115 115 0 1 0 .6-230zm-.6 40.4a74.6 74.6 0 1 1 .6 149.2 74.6 74.6 0 1 1 -.6-149.2zm93.4-45.1a26.8 26.8 0 1 1 53.6 0 26.8 26.8 0 1 1 -53.6 0zm129.7 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM399 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/>
+        </svg> 
+        <svg class="social__icon link-yellow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
+          <path d="M523.4 215.7C523.7 220.2 523.7 224.8 523.7 229.3C523.7 368 418.1 527.9 225.1 527.9C165.6 527.9 110.4 510.7 64 480.8C72.4 481.8 80.6 482.1 89.3 482.1C138.4 482.1 183.5 465.5 219.6 437.3C173.5 436.3 134.8 406.1 121.5 364.5C128 365.5 134.5 366.1 141.3 366.1C150.7 366.1 160.1 364.8 168.9 362.5C120.8 352.8 84.8 310.5 84.8 259.5L84.8 258.2C98.8 266 115 270.9 132.2 271.5C103.9 252.7 85.4 220.5 85.4 184.1C85.4 164.6 90.6 146.7 99.7 131.1C151.4 194.8 229 236.4 316.1 240.9C314.5 233.1 313.5 225 313.5 216.9C313.5 159.1 360.3 112 418.4 112C448.6 112 475.9 124.7 495.1 145.1C518.8 140.6 541.6 131.8 561.7 119.8C553.9 144.2 537.3 164.6 515.6 177.6C536.7 175.3 557.2 169.5 576 161.4C561.7 182.2 543.8 200.7 523.4 215.7z"/>
+        </svg>
+      </div>
+    </div>
+    <nav class="sidemenu__nav">
+      <a class="sidemenu__nav__link" href="#">Equipment</a>
+      <a class="sidemenu__nav__link" href="#">About us</a>
+      <a class="sidemenu__nav__link" href="#">Blog</a>
+    </nav>
+  </aside>
+  
+  <header class="header" id="topHeader">
+    <a class="header__icon" href="#">MNTN</a>
+    <nav class="header__navbar">
+      <a class="navlink link-yellow" href="#">Equipment</a>
+      <a class="navlink link-yellow" href="#">About us</a>
+      <a class="navlink link-yellow" href="#">Blog</a>
+    </nav>
+    <a class="header__userconnect link-yellow" href="#">
+      <svg class="user-icon link-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
+        <path d="M470.5 463.6C451.4 416.9 405.5 384 352 384L288 384C234.5 384 188.6 416.9 169.5 463.6C133.9 426.3 112 375.7 112 320C112 205.1 205.1 112 320 112C434.9 112 528 205.1 528 320C528 375.7 506.1 426.2 470.5 463.6zM430.4 496.3C398.4 516.4 360.6 528 320 528C279.4 528 241.6 516.4 209.5 496.3C216.8 459.6 249.2 432 288 432L352 432C390.8 432 423.2 459.6 430.5 496.3zM320 576C461.4 576 576 461.4 576 320C576 178.6 461.4 64 320 64C178.6 64 64 178.6 64 320C64 461.4 178.6 576 320 576zM320 304C297.9 304 280 286.1 280 264C280 241.9 297.9 224 320 224C342.1 224 360 241.9 360 264C360 286.1 342.1 304 320 304zM232 264C232 312.6 271.4 352 320 352C368.6 352 408 312.6 408 264C408 215.4 368.6 176 320 176C271.4 176 232 215.4 232 264z"/>
+      </svg>
+      <p>Account</p>
+    </a>
+  </header>
+  
+  <section class="hero" id="#hero">
+    
+    <div class="hero__banner">
+      <p class="hero__banner__heading tagline"><span class="hero__heading--line tagline__line"></span>A Hiking Guide</p>
+      <h1 class="hero__banner__title">Be prepared for the<br> Mountains and beyond!</h1>
+      <a class="hero__banner__scroll link-yellow" href="#">Scroll Down 
+        <svg class="arrow-down link-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
+          <path d="M297.4 566.6C309.9 579.1 330.2 579.1 342.7 566.6L502.7 406.6C515.2 394.1 515.2 373.8 502.7 361.3C490.2 348.8 469.9 348.8 457.4 361.3L352 466.7L352 96C352 78.3 337.7 64 320 64C302.3 64 288 78.3 288 96L288 466.7L182.6 361.3C170.1 348.8 149.8 348.8 137.3 361.3C124.8 373.8 124.8 394.1 137.3 406.6L297.3 566.6z"/>
+        </svg>
+      </a>
+    </div>
+
+    <img class="hero__back HG" src="/assets/images/background/HG-v2.png" alt="Hero-BG">
+    <img class="hero__back MG" src="/assets/images/background/MG-v2.png" alt="Hero-BG">
+    <img class="hero__back VG" src="/assets/images/background/VG-v0.png" alt="Hero-BG">
+    
+   
+    
+  </section>
+  
+  <main class="main-section">
+
+    <article class="article article-bg-01">   
+      <div class="anchor" id="article01"></div>
+      <img class="article__picture pictureA" src="/assets/images/content/01.png" alt="Mountain_trail">           
+      <div class="article__content content-reverse-col">       
+          <h2 class="article__content__number">01</h2>
+          <p class="article__content__tagline tagline"><span class="tagline__line"></span>Get Started</p>
+          <h3 class="article__content__title">What level of hiker are you?</h3>
+          <p class="article__content__paragraph">Determining what level of hiker you are can be an important tool when planning future hikes. This hiking level guide will help you plan hikes according to different hike ratings set by various websites like All Trails and Modern Hiker. What type of hiker are you – novice, moderate, advanced moderate, expert, or expert backpacker?
+          </p>
+          <a class="article__content__footer" href="#">
+            <p>read more</p>
+            <svg class="article__content__footer__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
+              <path d="M566.6 342.6C579.1 330.1 579.1 309.8 566.6 297.3L406.6 137.3C394.1 124.8 373.8 124.8 361.3 137.3C348.8 149.8 348.8 170.1 361.3 182.6L466.7 288L96 288C78.3 288 64 302.3 64 320C64 337.7 78.3 352 96 352L466.7 352L361.3 457.4C348.8 469.9 348.8 490.2 361.3 502.7C373.8 515.2 394.1 515.2 406.6 502.7L566.6 342.7z"/>
+            </svg>
+          </a>        
+      </div>
+    </article>
+
+    <article class="article article-bg-02">
+      <div class="anchor" id="article02"></div>
+      <img class="article__picture pictureB" src="/assets/images/content/02.png" alt="Mountain_trail">           
+      <div class="article__content">       
+          <h2 class="article__content__number">02</h2>
+          <p class="article__content__tagline tagline"><span class="tagline__line"></span>Hiking Essentials</p>
+          <h3 class="article__content__title">Picking the right Hiking Gear!</h3>
+          <p class="article__content__paragraph">The nice thing about beginning hiking is that you don’t really need any special gear, you can probably get away with things you already have. Let’s start with clothing. A typical mistake hiking beginners make is wearing jeans and regular clothes, which will get heavy and chafe wif they get sweaty or wet.
+          </p>
+          <a class="article__content__footer" href="#">
+            <p>read more</p>
+            <svg class="article__content__footer__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
+              <path d="M566.6 342.6C579.1 330.1 579.1 309.8 566.6 297.3L406.6 137.3C394.1 124.8 373.8 124.8 361.3 137.3C348.8 149.8 348.8 170.1 361.3 182.6L466.7 288L96 288C78.3 288 64 302.3 64 320C64 337.7 78.3 352 96 352L466.7 352L361.3 457.4C348.8 469.9 348.8 490.2 361.3 502.7C373.8 515.2 394.1 515.2 406.6 502.7L566.6 342.7z"/>
+            </svg>
+          </a>        
+      </div>
+    </article>
+
+    <article class="article article-bg-03"> 
+      <div class="anchor" id="article03"></div>  
+      <img class="article__picture pictureB" src="/assets/images/content/03.png" alt="Mountain_trail">           
+      <div class="article__content content-reverse-col">       
+          <h2 class="article__content__number">03</h2>
+          <p class="article__content__tagline tagline"><span class="tagline__line"></span>where you go is the key</p>
+          <h3 class="article__content__title">Understand Your Map & Timing</h3>
+          <p class="article__content__paragraph">To start, print out the hiking guide and map. If it’s raining, throw them in a Zip-Lock bag. Read over the guide, study the map, and have a good idea of what to expect. I like to know what my next landmark is as I hike. For example, I’ll read the guide and know that say, in a mile, I make a right turn at the junction..
+          </p>
+          <a class="article__content__footer" href="#">
+            <p>read more</p>
+            <svg class="article__content__footer__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
+              <path d="M566.6 342.6C579.1 330.1 579.1 309.8 566.6 297.3L406.6 137.3C394.1 124.8 373.8 124.8 361.3 137.3C348.8 149.8 348.8 170.1 361.3 182.6L466.7 288L96 288C78.3 288 64 302.3 64 320C64 337.7 78.3 352 96 352L466.7 352L361.3 457.4C348.8 469.9 348.8 490.2 361.3 502.7C373.8 515.2 394.1 515.2 406.6 502.7L566.6 342.7z"/>
+            </svg>
+          </a>        
+      </div>
+    </article>
+  </main>
+  
+  <footer class="footer">
+    <div class="footer__head">
+        <h3 class="footer__head__logo">MNTN</h3>
+        <p class="footer__head__content">Get out there & discover your next slope, mountain & destination!</p>      
+    </div>
+    <div class="footer__copyrights">
+      <p class="footer__copyrights__content">Copyright 2023 MNTN, Inc. Terms & Privacy</p>
+    </div>
+    <div class="footer__links">
+      <ul class="footer__links__list">
+        <li class="links-title">More on the blog</li>
+        <li><a href="#">About MNTN</a></li>
+        <li><a href="#">Contributors & Writers</a></li>
+        <li><a href="#">Write For Us</a></li>
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+      </ul> 
+      <ul class="footer__links__list">
+        <li class="links-title">More on MNTN</li>
+        <li><a href="#">The Team</a></li>
+        <li><a href="#">Jobs</a></li>
+        <li><a href="#">Press</a></li>
+      </ul>     
+    </div>
+    
+  </footer>
+</body>
+</html>

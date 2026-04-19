@@ -1,0 +1,49 @@
+// fade out of the Loader
+@keyframes loading {
+  0%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+  }
+}
+
+// Hero section 'scroll down'
+@keyframes arrowScroll {
+  0%{
+   transform: translateY(0%);
+   opacity: 1; 
+  }
+  25%{
+   transform: translateY(50%);
+   opacity: 0.75; 
+  }
+  50%{
+    transform: translateY(75%);
+   opacity: 0;
+  }
+  70%{
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  80%{
+    transform: translateY(-75%);
+    opacity: 0.25;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+@keyframes pulse{
+  0%{
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.4)
+  }
+  50%{
+    text-shadow: 0 0 40px rgba(255, 255, 255, 0.6);
+  }
+  100%{
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.4)
+  }
+}
