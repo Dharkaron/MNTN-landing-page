@@ -1,32 +1,32 @@
 @charset "UTF-8";
 @font-face {
   font-family: "Chronicle-Display--bold";
-  src: url("/assets/fonts/Chronicle-display/Chronicle-Display-Black.otf");
+  src: url("./assets/fonts/Chronicle-display/Chronicle-Display-Black.otf");
 }
 @font-face {
   font-family: "Chronicle-Display--semibold";
-  src: url("/assets/fonts/Chronicle-display/Chronicle-Display-Semibold.otf");
+  src: url("./assets/fonts/Chronicle-display/Chronicle-Display-Semibold.otf");
   font-weight: 600;
 }
 @font-face {
   font-family: "Chronicle-Display";
-  src: url("/assets/fonts/Chronicle-display/Chronicle-Display-Roman.otf");
+  src: url("./assets/fonts/Chronicle-display/Chronicle-Display-Roman.otf");
 }
 @font-face {
   font-family: "Gilroy-extrabold";
-  src: url("/assets/fonts/Gilroy/Gilroy-ExtraBold.otf");
+  src: url("./assets/fonts/Gilroy/Gilroy-ExtraBold.otf");
 }
 @font-face {
   font-family: "Gilroy-bolder";
-  src: url("/assets/fonts/Gilroy/Gilroy-ExtraBold.otf");
+  src: url("./assets/fonts/Gilroy/Gilroy-ExtraBold.otf");
 }
 @font-face {
   font-family: "Gilroy-bold";
-  src: url("/assets/fonts/Gilroy/Gilroy-Bold.ttf");
+  src: url("./assets/fonts/Gilroy/Gilroy-Bold.ttf");
 }
 @font-face {
   font-family: "Gilroy-regular";
-  src: url("/assets/fonts/Gilroy/Gilroy-Regular.ttf");
+  src: url("./assets/fonts/Gilroy/Gilroy-Regular.ttf");
 }
 @keyframes loading {
   0% {
@@ -756,14 +756,14 @@ a {
     display: none;
   }
   .main-section .article-bg-01::after {
-    background-image: url(/assets/images/content/01.png);
+    background-image: url(./assets/images/content/01.png);
     background-position: 50% 100% !important;
   }
   .main-section .article-bg-02::after {
-    background-image: url(/assets/images/content/02.png);
+    background-image: url(./assets/images/content/02.png);
   }
   .main-section .article-bg-03::after {
-    background-image: url(/assets/images/content/03.png);
+    background-image: url(./assets/images/content/03.png);
   }
 }
 @media (width < 700px) {
