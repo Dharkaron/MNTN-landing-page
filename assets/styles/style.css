@@ -756,14 +756,14 @@ a {
     display: none;
   }
   .main-section .article-bg-01::after {
-    background-image: url(./assets/images/content/01.png);
+    background-image: url(https://dharkaron.github.io/MNTN-landing-page/assets/images/content/01.png);
     background-position: 50% 100% !important;
   }
   .main-section .article-bg-02::after {
-    background-image: url(./assets/images/content/02.png);
+    background-image: url(https://dharkaron.github.io/MNTN-landing-page/assets/images/content/02.png);
   }
   .main-section .article-bg-03::after {
-    background-image: url(./assets/images/content/03.png);
+    background-image: url(https://dharkaron.github.io/MNTN-landing-page/assets/images/content/03.png);
   }
 }
 @media (width < 700px) {
