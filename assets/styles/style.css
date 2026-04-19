@@ -1,32 +1,32 @@
 @charset "UTF-8";
 @font-face {
   font-family: "Chronicle-Display--bold";
-  src: url("https://dharkaron.github.io/MNTN-landing-page/assets/fonts/Chronicle-display/Chronicle-Display-Black.otf");
+  src: url("../../../assets/fonts/Chronicle-display/Chronicle-Display-Black.otf");
 }
 @font-face {
   font-family: "Chronicle-Display--semibold";
-  src: url("https://dharkaron.github.io/MNTN-landing-page/assets/fonts/Chronicle-display/Chronicle-Display-Semibold.otf");
+  src: url("../../../assets/fonts/Chronicle-display/Chronicle-Display-Semibold.otf");
   font-weight: 600;
 }
 @font-face {
   font-family: "Chronicle-Display";
-  src: url("https://dharkaron.github.io/MNTN-landing-page/assets/fonts/Chronicle-display/Chronicle-Display-Roman.otf");
+  src: url("../../../assets/fonts/Chronicle-display/Chronicle-Display-Roman.otf");
 }
 @font-face {
   font-family: "Gilroy-extrabold";
-  src: url("https://dharkaron.github.io/MNTN-landing-page/assets/fonts/Gilroy/Gilroy-ExtraBold.otf");
+  src: url("../../../assets/fonts/Gilroy/Gilroy-ExtraBold.otf");
 }
 @font-face {
   font-family: "Gilroy-bolder";
-  src: url("https://dharkaron.github.io/MNTN-landing-page/assets/fonts/Gilroy/Gilroy-ExtraBold.otf");
+  src: url("../../../assets/fonts/Gilroy/Gilroy-ExtraBold.otf");
 }
 @font-face {
   font-family: "Gilroy-bold";
-  src: url("https://dharkaron.github.io/MNTN-landing-page/assets/fonts/Gilroy/Gilroy-Bold.ttf");
+  src: url("../../../assets/fonts/Gilroy/Gilroy-Bold.ttf");
 }
 @font-face {
   font-family: "Gilroy-regular";
-  src: url("https://dharkaron.github.io/MNTN-landing-page/assets/fonts/Gilroy/Gilroy-Regular.ttf");
+  src: url("../../../assets/fonts/Gilroy/Gilroy-Regular.ttf");
 }
 @keyframes loading {
   0% {
@@ -453,7 +453,6 @@ a {
     row-gap: 60px;
   }
 }
-/* media query at 700 (text & co), 620 (bg pos) */
 .hero {
   height: 100vh;
   max-width: 100vw;
@@ -488,6 +487,17 @@ a {
   top: 75%;
   will-change: transform;
   transform-style: preserve-3d;
+}
+.hero .VG img {
+  object-fit: cover;
+  width: 100%;
+}
+.hero .VG-shadow {
+  position: absolute;
+  background-color: rgb(5, 29, 40);
+  width: 100%;
+  height: 500px;
+  box-shadow: 0 -20vh 15vh 10vh rgb(5, 29, 40);
 }
 .hero__banner {
   will-change: opacity, transform;
@@ -590,7 +600,7 @@ a {
   display: flex;
   flex-flow: column nowrap;
   gap: 300px;
-  margin: 50vh 140px 300px;
+  margin: 70vh 140px 300px;
 }
 .main-section .article {
   position: relative;
@@ -756,14 +766,14 @@ a {
     display: none;
   }
   .main-section .article-bg-01::after {
-    background-image: url(https://dharkaron.github.io/MNTN-landing-page/assets/images/content/01.png);
+    background-image: url(../../../assets/images/content/01.png);
     background-position: 50% 100% !important;
   }
   .main-section .article-bg-02::after {
-    background-image: url(https://dharkaron.github.io/MNTN-landing-page/assets/images/content/02.png);
+    background-image: url(../../../assets/images/content/02.png);
   }
   .main-section .article-bg-03::after {
-    background-image: url(https://dharkaron.github.io/MNTN-landing-page/assets/images/content/03.png);
+    background-image: url(../../../assets/images/content/03.png);
   }
 }
 @media (width < 700px) {

@@ -15,9 +15,9 @@ const handleHeroSection = () => {
     sectionHero.style.opacity = `${1 - (window.pageYOffset/700)}`
     sectionHero.style.transform =  `translate3d(0, ${ -(window.pageYOffset/16)}%, 0)` 
 
-    backgroundTop.style.transform = `translate3d(0, ${ -(window.pageYOffset/8)}%, 0)`    
-    backgroundMid.style.transform = `translate3d(0, ${ -(window.pageYOffset/16)}%, 0)`    
-    backgroundBt.style.transform = `translate3d(0, ${ -(window.pageYOffset/32)}%, 0)`  
+    backgroundTop.style.transform = `translate3d(0, ${ -(window.pageYOffset/16)}%, 0)`    
+    backgroundMid.style.transform = `translate3d(0, ${ -(window.pageYOffset/32)}%, 0)`    
+    backgroundBt.style.transform = `translate3d(0, ${ -(window.pageYOffset/16)}%, 0)`    
     
     sectionHero.classList.remove('unselectable')
   }

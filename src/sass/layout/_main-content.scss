@@ -6,7 +6,7 @@
   flex-flow: column nowrap;
   gap: 300px;
 
-  margin: 50vh 140px 300px;
+  margin: 70vh 140px 300px;
 
   & .article{
     position: relative;
@@ -193,14 +193,14 @@
       }
     }
     & .article-bg-01::after{
-      background-image: url(https://dharkaron.github.io/MNTN-landing-page/assets/images/content/01.png);
+      background-image: url(../../../assets/images/content/01.png);
       background-position: 50% 100% !important;
     }
     & .article-bg-02::after{
-      background-image: url(https://dharkaron.github.io/MNTN-landing-page/assets/images/content/02.png);
+      background-image: url(../../../assets/images/content/02.png);
     }
     & .article-bg-03::after{
-      background-image: url(https://dharkaron.github.io/MNTN-landing-page/assets/images/content/03.png);
+      background-image: url(../../../assets/images/content/03.png);
     }
   }
 }

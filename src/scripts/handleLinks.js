@@ -64,7 +64,7 @@ export function handleSliderMenu() {
     const anchor02 = document.getElementById('article02').getBoundingClientRect().y
     const anchor03 = document.getElementById('article03').getBoundingClientRect().y
 
-    console.log(anchor01, anchor02, anchor03);
+    //console.log(anchor01, anchor02, anchor03);
     
 
     sliderBorder.forEach(border => { 
