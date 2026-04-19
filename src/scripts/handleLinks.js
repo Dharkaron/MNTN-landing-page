@@ -64,20 +64,23 @@ export function handleSliderMenu() {
     const anchor02 = document.getElementById('article02').getBoundingClientRect().y
     const anchor03 = document.getElementById('article03').getBoundingClientRect().y
 
+    console.log(anchor01, anchor02, anchor03);
+    
+
     sliderBorder.forEach(border => { 
-      if (anchor01>250) {
+      if (anchor01>300) {
         border.classList.remove('link--selected')
         slider00.classList.add('link--selected')          
       }
-      if (anchor01<250 && anchor02>300) {
+      if (anchor01<=300 && anchor02>300) {
         border.classList.remove('link--selected')
         slider01.classList.add('link--selected')         
       }
-      if (anchor02<100 && anchor03>300) {
+      if (anchor02<=300 && anchor03>300) {
         border.classList.remove('link--selected')
         slider02.classList.add('link--selected')         
       }
-      if (anchor03<100) {
+      if (anchor03<=300) {
         border.classList.remove('link--selected')
         slider03.classList.add('link--selected')         
       }     
