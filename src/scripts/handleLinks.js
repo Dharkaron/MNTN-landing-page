@@ -6,12 +6,16 @@ export function handleSliderMenu() {
   const sliderLinks = document.querySelectorAll('.slider__link')
   const sliderBorder = document.querySelectorAll('.link--border')
   const sidemenuCheckbox = document.getElementById('togglemenu')
+
  
 //// Gère l'affichage pour le redimensionnement manuel de la page / changement d'orientation du support
   window.onresize = () => { 
-    if(window.innerWidth<1024){
+    if(window.innerWidth<1024 && !sidemenuCheckbox.checked){
       slider.style.opacity = '0'
       slider.style.transform = 'translateX(150%)'
+    }else if(window.innerWidth<1024 && sidemenuCheckbox.checked){
+      slider.style.opacity = '1'
+      slider.style.transform = 'translateX(0)'
     }else if(window.innerWidth>=1024){
       slider.style.opacity = '1'
       slider.style.transform = 'translateX(0)'

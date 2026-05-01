@@ -73,3 +73,16 @@
     }
   }
 }
+@media (height<500px){
+  .slider{
+    top: 20px;
+
+    &__link{
+      padding: 25px 30px 25px 0;
+
+      & .link--selected, & .link--border{        
+        height: 75px;
+      }
+    }
+  }
+}

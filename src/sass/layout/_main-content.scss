@@ -172,7 +172,7 @@
         bottom: 0;
        
         filter: blur(2px) saturate(75%) opacity(0.2);
-        background-position: 100% 50%;
+        background-position: 50%;
         background-repeat: no-repeat;
         background-size: cover;
         border-radius: 20px;
@@ -194,10 +194,10 @@
     }
     & .article-bg-01::after{
       background-image: url(https://dharkaron.github.io/MNTN-landing-page/assets/images/content/01.png);
-      background-position: 50% 100% !important;
     }
     & .article-bg-02::after{
       background-image: url(https://dharkaron.github.io/MNTN-landing-page/assets/images/content/02.png);
+      background-position: 25% !important;
     }
     & .article-bg-03::after{
       background-image: url(https://dharkaron.github.io/MNTN-landing-page/assets/images/content/03.png);
@@ -208,7 +208,7 @@
 
 @media (width<700px){
   .main-section { 
-    margin: 50vh 20px 300px; 
+    margin: 350px 20px 300px; 
 
     .article{
       padding: 100px 50px;

@@ -9,8 +9,12 @@ button.test-btn{
   position: fixed;
   top: 120px;
   left: 80px;
-  z-index: 200;
+  z-index: 2000;
   display: none;
+
+  &:hover{
+    box-shadow: 5px 5px 2px rgba(0,0,0,0.6);
+  }
 }
 
 /* media queries : 1300, 1200, 1024, 700, 620 */

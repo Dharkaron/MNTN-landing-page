@@ -233,6 +233,17 @@ a {
     width: 5px;
   }
 }
+@media (height < 500px) {
+  .slider {
+    top: 20px;
+  }
+  .slider__link {
+    padding: 25px 30px 25px 0;
+  }
+  .slider__link .link--selected, .slider__link .link--border {
+    height: 75px;
+  }
+}
 .social {
   z-index: 200;
   position: fixed;
@@ -350,12 +361,12 @@ a {
 }
 .sidemenu__social {
   position: absolute;
-  top: 70vh;
+  top: 80vh;
   left: 0;
   display: grid;
   justify-items: center;
   grid-template-rows: 2fr;
-  gap: 40px;
+  gap: 20px;
   width: 100vw;
   transform: translateY(150%);
   opacity: 0;
@@ -379,6 +390,14 @@ a {
     display: flex;
   }
 }
+@media (height < 500px) {
+  .sidemenu__nav {
+    top: 60px;
+  }
+  .sidemenu__social {
+    top: 70vh;
+  }
+}
 .header {
   z-index: 90;
   position: absolute;
@@ -390,6 +409,7 @@ a {
   flex-flow: row nowrap;
   justify-content: space-between;
   align-items: center;
+  text-align: center;
 }
 .header__icon {
   font-size: 32px;
@@ -416,6 +436,9 @@ a {
   fill: hsl(0, 0%, 100%);
   height: 24px;
 }
+.header__userconnect p {
+  height: 17px;
+}
 
 /* remplacement par un menu déroulant */
 @media (width < 1024px) {
@@ -429,28 +452,16 @@ a {
 }
 @media (width < 700px) {
   .header {
-    display: grid;
-    justify-items: center;
-    text-align: center;
-    align-items: center;
-    row-gap: 40px;
-    column-gap: 0;
-    padding: 100px 0 0 0;
+    flex-direction: column-reverse;
+    gap: 60px;
+    padding: 80px 0 0 0;
   }
   .header__icon {
     grid-area: 2/1/3/3;
     font-size: 50px;
   }
-  .header__navbar {
-    display: none;
-  }
   .header__userconnect {
     grid-area: 1/1/2/3;
-  }
-}
-@media (width < 620px) {
-  .header {
-    row-gap: 60px;
   }
 }
 .hero {
@@ -483,7 +494,7 @@ a {
   top: 50%;
 }
 .hero .VG {
-  z-index: 90;
+  z-index: 80;
   top: 75%;
   will-change: transform;
   transform-style: preserve-3d;
@@ -562,7 +573,10 @@ a {
 /* display:inline  pour arriere plan du texte*/
 @media (width < 700px) {
   .hero__banner {
-    top: 50vh;
+    top: 400px;
+    z-index: 90;
+    position: absolute;
+    opacity: 1 !important;
   }
   .hero__banner__title {
     font-size: 50px;
@@ -573,24 +587,19 @@ a {
 }
 @media (width < 620px) {
   .hero__banner {
-    z-index: 100;
     position: absolute;
-    top: 80vh;
     left: 0;
     opacity: 1 !important;
     padding: 0 5px;
-  }
-  .hero__banner__title span {
-    display: inline;
-    background-color: rgba(0, 0, 0, 0.2);
-    border-radius: 10px;
-    padding: 2px 5px;
   }
   .hero .MG {
     top: 26%;
   }
   .hero .VG {
     top: 40%;
+  }
+  .hero .VG-shadow {
+    box-shadow: 0 -10vh 8vh 5vh rgb(5, 29, 40);
   }
 }
 .main-section {
@@ -747,7 +756,7 @@ a {
     right: 0;
     bottom: 0;
     filter: blur(2px) saturate(75%) opacity(0.2);
-    background-position: 100% 50%;
+    background-position: 50%;
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 20px;
@@ -767,10 +776,10 @@ a {
   }
   .main-section .article-bg-01::after {
     background-image: url(https://dharkaron.github.io/MNTN-landing-page/assets/images/content/01.png);
-    background-position: 50% 100% !important;
   }
   .main-section .article-bg-02::after {
     background-image: url(https://dharkaron.github.io/MNTN-landing-page/assets/images/content/02.png);
+    background-position: 25% !important;
   }
   .main-section .article-bg-03::after {
     background-image: url(https://dharkaron.github.io/MNTN-landing-page/assets/images/content/03.png);
@@ -778,7 +787,7 @@ a {
 }
 @media (width < 700px) {
   .main-section {
-    margin: 50vh 20px 300px;
+    margin: 350px 20px 300px;
   }
   .main-section .article {
     padding: 100px 50px;
@@ -896,8 +905,11 @@ button.test-btn {
   position: fixed;
   top: 120px;
   left: 80px;
-  z-index: 200;
+  z-index: 2000;
   display: none;
+}
+button.test-btn:hover {
+  box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.6);
 }
 
 /* media queries : 1300, 1200, 1024, 700, 620 */

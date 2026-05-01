@@ -31,7 +31,7 @@
     top: 50%;
   }
   & .VG{
-    z-index: 90;
+    z-index: 80;
     top: 75%;
     will-change: transform;
     transform-style: preserve-3d;
@@ -128,7 +128,11 @@
 @media (width<700px){
   .hero{
     &__banner{    
-      top: 50vh; 
+      top: 400px; 
+      z-index: 90;
+      //will-change: unset;
+      position: absolute;
+      opacity: 1 !important;
       &__title{
         font-size: 50px;
       }
@@ -142,19 +146,11 @@
 @media (width<620px){
   .hero{
     &__banner{
-      z-index: 100;
       position: absolute;
-      top: 80vh;
+      //top: 80vh;
       left: 0;
       opacity: 1 !important;
       padding: 0 5px;
-
-      &__title span{
-        display: inline;
-        background-color: rgba(0,0,0,0.2);
-        border-radius: 10px;
-        padding: 2px 5px;
-      }
     }
 
     & .MG{
@@ -162,6 +158,9 @@
     }
     & .VG{
       top: 40%;
+    }
+    & .VG-shadow{
+      box-shadow: 0 -10vh 8vh 5vh rgb(5, 29, 40);
     }
   }
 }

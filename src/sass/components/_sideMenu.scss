@@ -100,13 +100,13 @@
   }
   &__social{
     position: absolute;
-    top: 70vh;
+    top: 80vh;
     left: 0;
 
     display: grid;
     justify-items: center;
     grid-template-rows: 2fr;
-    gap: 40px;
+    gap: 20px;
     width: 100vw;
     transform: translateY(150%);
     opacity: 0;
@@ -132,4 +132,15 @@
       display: flex;
     }
   }
+}
+@media (height<500px){
+  .sidemenu{
+    &__nav{
+      top: 60px;
+    }
+    &__social{
+      top: 70vh;
+    }
+  }
+
 }
